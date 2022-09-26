@@ -6,26 +6,98 @@ body,
   box-sizing: border-box;
   font-size: 62.5%;
 }
-.parent {
-  font-size: 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+@font-face {
+  src: url(fonts/CookieRun\ Black.ttf);
+  font-family: Cookie-Run;
 }
-.child {
-  border: 1px solid red;
+body {
+  background-color: rgb(107, 16, 100);
+}
+.heading {
+  font-family: Cookie-Run;
+  font-size: 70px;
+  color: white;
+  text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
+  margin: 70px;
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(199, 72, 190);
+  border: 5px solid rgb(78, 49, 133);
+  border-radius: 30%;
+}
+.parent {
+  font-family: Cookie-Run;
+  font-size: 50px;
+  color: white;
+  text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 15px;
+}
+.Category {
+  background-color: rgb(199, 72, 190);
+  border: 4px solid rgb(78, 49, 133);
+  border-radius: 20%;
   width: 28%;
+  height: 400px;
+  margin-top: 10px;
 }
 .child-1 {
-  border: 3px solid green;
-  height: 300px;
+  background-image: url(Images/Vamp_mc_lv3.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .child-2 {
-  border: 3px solid yellow;
-  height: 500px;
-  flex-grow: 2;
+  background-image: url(Images/Soulstone_3.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .child-3 {
-  border: 3px solid blue;
-  height: 600px;
+  background-image: url(Images/Topping_main_back.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.child-4 {
+  background-image: url(Images/Skill_powder.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.child-5 {
+  background-image: url(Images/Exp_star_jelly_7.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.child-6 {
+  background-image: url(Images/Material_rare_aurora_pillar.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.child-8 {
+  background-image: url(Images/Currency_coin_crate.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.child-9 {
+  background-image: url(Images/Currency_crystal_cart.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+h2 {
+  margin-top: 15px;
+  font-size: 50px;
+}
+.new {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: dashed rgb(78, 49, 133);
+  color: rgb(255, 0, 255);
 }
