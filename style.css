@@ -80,6 +80,12 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+.child-7 {
+  background-image: url(Images/Radiant.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .child-8 {
   background-image: url(Images/Currency_coin_crate.webp);
   background-size: contain;
