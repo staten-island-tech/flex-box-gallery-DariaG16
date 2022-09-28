@@ -24,6 +24,7 @@ body {
   background-color: rgb(199, 72, 190);
   border: 5px solid rgb(78, 49, 133);
   border-radius: 30%;
+  box-shadow: 10px 5px 5px rgb(38, 0, 56);
 }
 .parent {
   font-family: Cookie-Run;
@@ -43,6 +44,7 @@ body {
   width: 28%;
   height: 400px;
   margin-top: 10px;
+  box-shadow: 10px 5px 5px rgb(38, 0, 56);
 }
 .child-1 {
   background-image: url(Images/Vamp_mc_lv3.webp);
@@ -100,7 +102,7 @@ body {
 }
 h2 {
   margin-top: 15px;
-  font-size: 50px;
+  font-size: 6rem;
 }
 .new {
   background-color: rgba(0, 0, 0, 0.5);
