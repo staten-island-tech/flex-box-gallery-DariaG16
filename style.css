@@ -45,6 +45,15 @@ body {
   height: 400px;
   margin-top: 10px;
   box-shadow: 10px 5px 5px rgb(38, 0, 56);
+  -webkit-transition: all 0.3s;
+}
+.Category:hover {
+  transform: scale(1.05);
+  outline: 4px solid rgb(78, 49, 133);
+}
+.everything:hover .Category:not(:hover) {
+  transform: scale(0.9);
+  opacity: 0.3;
 }
 .child-1 {
   background-image: url(Images/Vamp_mc_lv3.webp);
@@ -108,4 +117,12 @@ h2 {
   background-color: rgba(0, 0, 0, 0.5);
   border: dashed rgb(78, 49, 133);
   color: rgb(255, 0, 255);
+  animation-fill-mode: 1s ease-in;
+}
+
+@keyframes neww {
+  0% {
+  }
+  100% {
+  }
 }
