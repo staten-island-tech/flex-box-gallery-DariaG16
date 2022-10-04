@@ -26,13 +26,18 @@ body {
   border-radius: 30%;
   box-shadow: 10px 5px 5px rgb(38, 0, 56);
 }
-.parent {
+.heading:hover {
+  animation-name: neww;
+  animation-duration: 4s;
+}
+.everything {
   font-family: Cookie-Run;
   font-size: 50px;
   color: white;
   text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
   text-align: center;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   margin: 15px;
@@ -108,6 +113,7 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  src: url(https://www.sportskeeda.com/esports/how-prepare-magic-candies-cookie-run-kingdom);
 }
 h2 {
   margin-top: 15px;
@@ -122,7 +128,13 @@ h2 {
 
 @keyframes neww {
   0% {
+    margin-right: 3em;
+    margin-left: 3em;
+  }
+  50% {
+    color: rgb(255, 0, 149);
   }
   100% {
+    color: white;
   }
 }
