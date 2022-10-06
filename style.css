@@ -35,12 +35,21 @@ body {
   font-size: 50px;
   color: white;
   text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
+
   text-align: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   margin: 15px;
+}
+@media screen and (max-width: 900px) {
+  .everything {
+    flex-direction: column;
+  }
+  .Category {
+    width: 45px;
+  }
 }
 .Category {
   background-color: rgb(199, 72, 190);
@@ -55,7 +64,9 @@ body {
 .Category:hover {
   transform: scale(1.05);
   outline: 4px solid rgb(78, 49, 133);
+  color: rgb(255, 0, 149);
 }
+
 .everything:hover .Category:not(:hover) {
   transform: scale(0.9);
   opacity: 0.3;
@@ -122,18 +133,31 @@ h2 {
   background-color: rgba(0, 0, 0, 0.5);
   border: dashed rgb(78, 49, 133);
   color: rgb(255, 0, 255);
-  animation-fill-mode: 1s ease-in;
+  margin: center;
 }
-
+.new:hover {
+  animation-name: newfr;
+  animation-duration: 4s;
+}
 @keyframes neww {
   0% {
-    margin-right: 3em;
-    margin-left: 3em;
+    
   }
   50% {
     color: rgb(255, 0, 149);
+    margin-right: 3em;
+    margin-left: 3em;
   }
   100% {
     color: white;
   }
+  
 }
+@keyframes newfr {
+  0% {
+  }
+  100% {
+    border-radius: 20%;
+    margin-right: 3em;
+    margin-left: 3em;
+  }
