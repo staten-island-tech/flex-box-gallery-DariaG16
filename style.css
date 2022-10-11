@@ -20,8 +20,6 @@ body {
 }
 .heading {
   font-family: Cookie-Run;
-  font-size: 70px;
-  color: white;
   text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
   margin: 70px;
   padding: 20px;
@@ -31,16 +29,19 @@ body {
   border-radius: 30%;
   box-shadow: 10px 5px 5px rgb(38, 0, 56);
 }
+.link {
+  font-size: 40px;
+  color: white;
+}
 .heading:hover {
   animation-name: neww;
-  animation-duration: 4s;
+  animation-duration: 1s;
 }
 .everything {
   font-family: Cookie-Run;
   font-size: 50px;
   color: white;
   text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
-
   text-align: center;
   display: flex;
   flex-wrap: wrap;
@@ -48,14 +49,7 @@ body {
   align-items: center;
   margin: 15px;
 }
-@media screen and (max-width: 900px) {
-  .everything {
-    flex-direction: column;
-  }
-  .Category {
-    width: 45px;
-  }
-}
+
 .Category {
   background-color: rgb(199, 72, 190);
   border: 4px solid rgb(78, 49, 133);
@@ -139,8 +133,8 @@ h2 {
   border: dashed rgb(78, 49, 133);
   color: rgb(255, 0, 255);
   margin: center;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .new:hover {
   animation-name: newfr;
@@ -150,19 +144,45 @@ h2 {
   0% {
   }
   50% {
-    color: rgb(255, 0, 149);
     margin-right: 3em;
     margin-left: 3em;
-  }
-  100% {
-    color: white;
   }
 }
 @keyframes newfr {
   0% {
   }
-  100% {
+  40% {
     border-radius: 20%;
     padding: 1%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .everything {
+    flex-direction: row;
+  }
+  .Category {
+    width: 450px;
+  }
+  .heading {
+    font-size: 60px;
+    margin: 2rem;
+  }
+}
+@media screen and (max-width: 390px) {
+  .everything {
+    flex-direction: row;
+  }
+  .Category {
+    width: 300px;
+    font-size: 30px;
+    height: 300px;
+    margin: 1rem;
+  }
+  .h2 {
+    font-size: 20px;
+  }
+  .heading {
+    font-size: 40px;
+    margin: 1rem;
   }
 }
