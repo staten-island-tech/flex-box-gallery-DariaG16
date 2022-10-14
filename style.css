@@ -92,11 +92,24 @@ body {
   transform: scale(1.05);
   outline: 4px solid rgb(78, 49, 133);
   color: rgb(255, 0, 149);
+  cursor: pointer;
 }
 
 .everything:hover .Category:not(:hover) {
   transform: scale(0.9);
   opacity: 0.3;
+}
+.hovertext {
+  opacity: 0%;
+  display: flex;
+  left: 40px;
+  font-size: 40px;
+  margin: 30px;
+  background-color: rgba(0, 0, 0, 0.445);
+}
+.hovertext:hover {
+  opacity: 100%;
+  color: red;
 }
 .child-1 {
   background-image: url(Images/Vamp_mc_lv3.webp);
